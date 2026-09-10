@@ -5,4 +5,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3871-count-commas-in-range-ii](https://github.com/saianilpatil/leetcode/tree/master/3871-count-commas-in-range-ii) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/saianilpatil/leetcode/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/saianilpatil/leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
