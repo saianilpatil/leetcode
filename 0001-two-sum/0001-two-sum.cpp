@@ -3,32 +3,29 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int n = nums.size();
 
-        // {value, original index}
+        // Store pairs of {value, original_index}
         vector<pair<int, int>> arr;
-
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             arr.push_back({nums[i], i});
         }
 
-        // Sort according to values
+        // Sort the array based on values
         sort(arr.begin(), arr.end());
 
-        int i = 0;
-        int j = n - 1;
+        int left = 0;
+        int right = n - 1;
 
-        while(i < j) {
+        while (left < right) {
+            int sum = arr[left].first + arr[right].first;
 
-            int sum = arr[i].first + arr[j].first;
-
-            if(sum == target) {
-                return {arr[i].second, arr[j].second};
+            if (sum == target) {
+                return {arr[left].second, arr[right].second};
             }
 
-            if(sum > target) {
-                j--;
-            }
-            else {
-                i++;
+            if (sum > target) {
+                right--;
+            } else {
+                left++;
             }
         }
 
